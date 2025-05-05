@@ -24,16 +24,8 @@ Este proyecto es una página web desarrollada con WordPress y Docker, dedicada a
 🛠️ Cómo ejecutar el proyecto
 Clona este repositorio:
 
-git clone https://github.com/TU_USUARIO/wordpress-ods3.git
+git clone https://github.com/marinettoo/wordpress-ods3.git
 cd wordpress-ods3
-Restaura los volúmenes (opcional si usas los backups):
-
-
-docker volume create wordpress_data
-docker volume create mariadb_data
-
-docker run --rm -v wordpress_data:/data -v ${PWD}/backup_wordpress:/backup alpine tar xzf /backup/wordpress_data.tar.gz -C /data
-docker run --rm -v mariadb_data:/data -v ${PWD}/backup_wordpress:/backup alpine tar xzf /backup/mariadb_data.tar.gz -C /data
 
 Lanza los servicios:
 
